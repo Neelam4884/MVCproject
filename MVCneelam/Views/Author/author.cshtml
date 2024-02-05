@@ -1,0 +1,43 @@
+﻿@model List<Author>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="card-header">
+<h2>Authors</h2>
+</div>
+<div class="card">
+<div class="card-block table-border-style">
+@if (ViewBag.authors != null)
+{
+    <table class="table">
+        <thead>
+            <tr class="table-primary">
+                <th>Author ID</th>
+                <th>Author Name</th>
+                <th>Author Publisher</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var author in ViewBag.authors)
+            {
+                <tr>
+                    <td>@author.AuthorId</td>
+                    <td>@author.AuthorName</td>
+                    <td>@author.AuthorPublisher</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No data available</p>
+}
+</div>
+</div>

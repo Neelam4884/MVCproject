@@ -1,0 +1,51 @@
+﻿.upload {
+    background-color: #01a9ac;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-left: 160px;
+    padding: 11px;
+
+}
+
+#imagePreviewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+    #imagePreviewContainer img {
+        width: 50%; /* Adjust the width as needed */
+        height: 70%; /* Adjust the height as needed */
+        margin: 5px;
+    }
+
+.image-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.j-pro .j-footer {
+    border-top: 1px dashed #01a9ac;
+}
+
+#uploadimage {
+    width: 50%;
+    margin-left: 40px;
+    border-radius: 55%;
+    height: 200px;
+    object-fit: cover;
+}

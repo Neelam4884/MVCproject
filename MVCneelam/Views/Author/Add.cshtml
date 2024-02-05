@@ -1,0 +1,220 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<div class="first-class" style="display:flex;">
+<div class="col-lg-5">
+    
+        <div class="card-header">
+            
+            <div class="card-header-right">
+
+            </div>
+        </div>
+        <div class="card">
+        <div class="card-block">
+            <h3>Upload File</h3>
+                <img id="previewImage" class="uploadimage" style="width: 50%;
+    margin-left: 40px;
+    border-radius: 55%;
+    height: 200px;
+    object-fit: cover;" src="/assets/images/uploadimg.jpg" />
+
+            <input type="file" name="files[]" id="filer_input1" multiple="multiple" hidden />
+            <label class="upload" for="filer_input1">Upload picture</label>
+
+            <div id="imagePreviewContainer">
+                <!-- Uploaded image previews will be displayed here -->
+            </div>
+        </div>
+        </div>
+         </div>
+
+
+
+
+            <div class="col-lg-7">
+                    <div class="row">
+                            <div class="card">
+
+                                <div class="card-block">
+
+                                    <div class="page-header">
+
+                                        <div class="row align-items-end">
+                                            <div class="col-lg-6">
+                                                <div class="page-header-title">
+                                                    <div class="d-inline">
+                                                        <h3>Registration Form</h3>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                <div class="j-wrapper j-wrapper-640" style="padding: 0px 15px">
+                                        <form action="https://demo.dashboardpack.com/adminty-html/default/j-pro/php/action.php" method="post" class="j-pro" id="j-pro" style="    box-shadow: none;" novalidate>
+                                            <div class="j-content">
+                                                <div class="j-unit">
+                                                    <label class="j-label">Username</label>
+                                                    <div class="j-input">
+                                                        <label class="j-icon-right" for="name">
+                                                            <i class="icofont icofont-ui-user"></i>
+                                                        </label>
+                                        <input type="text" id="name" name="name" required>
+                                                    </div>
+                                                </div>
+
+                                <div class="j-row">
+                                    <div class="j-span6 j-unit">
+                                        <label class="j-label">First Name</label>
+                                        <div class="j-input">
+                                            <label class="j-icon-right" for="adults">
+                                                <i class="icofont icofont-waiter"></i>
+                                            </label>
+                                            <input type="text" id="adults" name="adults" required>
+                                            <span class="j-tooltip j-tooltip-right-top">
+                                                Number
+                                                of adult guests
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="j-span6 j-unit">
+                                        <label class="j-label">
+                                            Last Name
+                                        </label>
+                                        <div class="j-input">
+                                            <label class="j-icon-right" for="children">
+                                                <i class="icofont icofont-woman-in-glasses"></i>
+                                            </label>
+                                            <input type="text" id="children" name="children" required>
+                                            <span class="j-tooltip j-tooltip-right-top">
+                                                Number
+                                                of children
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="j-divider j-gap-bottom-25"></div>
+
+                                        <div class="j-row">
+                                            <div class="j-span6 j-unit">
+                                                <label class="j-label">Your email</label>
+                                                <div class="j-input">
+                                                    <label class="j-icon-right" for="email">
+                                                        <i class="icofont icofont-envelope"></i>
+                                                    </label>
+                                            <input type="email" id="email" name="email" required>
+                                                </div>
+                                            </div>
+                                            <div class="j-span6 j-unit">
+                                                <label class="j-label">Phone/Mobile</label>
+                                                <div class="j-input">
+                                                    <label class="j-icon-right" for="phone">
+                                                        <i class="icofont icofont-phone"></i>
+                                                    </label>
+                                                    <input type="text" id="phone" name="phone">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                    <div class="j-row">
+                    <div class="j-span6 j-unit">
+                             <label class="j-label">Check-in date</label>
+                                                        <div class="j-input">
+                                                            <label class="j-icon-right" for="date_from">
+                                                                <i class="icofont icofont-ui-calendar"></i>
+                                                            </label>
+                                                            <input type="text" id="date_from" name="date_from" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div class="j-span6 j-unit">
+                                                        <label class="j-label">
+                                                            Birthday
+                                                        </label>
+                                                        <div class="j-input">
+                                                            <label class="j-icon-right" for="date_to">
+                                                                <i class="icofont icofont-ui-calendar"></i>
+                                                            </label>
+                                                            <input type="text" id="date_to" name="date_to" readonly>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="j-divider j-gap-bottom-25"></div>
+
+                                                <div class="j-unit">
+                                                    <label class="j-label">Comments/Message</label>
+                                                    <div class="j-input">
+                                                        <textarea spellcheck="false" name="message"></textarea>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="j-response"></div>
+
+                                            </div>
+
+                                    <div class="j-footer" >
+                                <button type="submit" class="btn btn-primary" style="background-color: #01a9ac;border-color: #01a9ac;">Submit</button>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+</div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#filer_input1').change(function () {
+            displayImagePreviews(this);
+        });
+
+        // Delete button clicks
+        $('#imagePreviewContainer').on('click', '.delete-button', function () {
+            $(this).closest('.image-preview').remove();
+            resetPreviewImage(); // Reset preview image when deleting all images
+        });
+    });
+
+    function displayImagePreviews(input) {
+        var imagePreviewContainer = $('#imagePreviewContainer');
+        imagePreviewContainer.empty(); // Clear previous previews
+
+        if (input.files && input.files.length > 0) {
+            var reader = new FileReader();
+
+            // reader.onload = function (e) {
+            //     var preview = $('<div class="image-preview">').append(
+            //         $('<img>').attr('src', e.target.result),
+            //         $('<button class="delete-button">Delete</button>')
+            //     );
+
+            //     imagePreviewContainer.append(preview);
+            // };
+
+            reader.readAsDataURL(input.files[0]);
+
+            // Set the source of the previewImage to the first uploaded image
+            var firstImageSrc = URL.createObjectURL(input.files[0]);
+            $('#previewImage').attr('src', firstImageSrc);
+        }
+    }
+
+    function resetPreviewImage() {
+        // Reset the previewImage to the default image
+        $('#previewImage').attr('src', '/assets/images/uploadimage.jpg');
+    }
+
+
+
+</script>
